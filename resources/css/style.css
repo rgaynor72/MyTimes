@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  font-family: Verdana;
+  font-weight: bold;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  background-color: white;
+  font-size: 14px;
+}
+
+.headerlogo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+  margin-left: 40px;
+}
+
+.headerlogo span {
+  color: MediumAquamarine;
+  display: inline-block;
+}
+
+nav {
+  padding-right: 40px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+header a {
+  color: inherit;
+  }
