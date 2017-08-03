@@ -5,30 +5,55 @@ body {
   color: black;
 }
 
-header {
+header, div.headerlogo, .column, .content, .imagetext, .stories, .story, .smallbites, footer, .footerinfo {
   display: flex;
-  align-items: center;
+}
+
+header {
   position: fixed;
-  width: 100%;
   height: 80px;
-  font-family: Verdana;
-  font-weight: bold;
   justify-content: space-between;
   border-bottom: 1px solid black;
   background-color: white;
   font-size: 14px;
+  z-index: 1;
+}
+
+header, footer {
+  width: 100%;
+  font-family: Verdana;
+}
+
+footer {
+  font-size: 12px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  height: 325px;
+  justify-content: center;
+}
+
+header, footer, .footerinfo {
+  align-items: center;
+}
+
+header, .smallbites h3, .imagetext, #mytimefooter {
+  font-weight: bold;
+}
+
+div.headerlogo {
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 30px;
 }
 
 .headerlogo img {
   width: 70px;
   height: 60px;
   margin-right: 12px;
-  margin-left: 40px;
 }
 
-.headerlogo span {
+.headerlogo span, {
   color: MediumAquamarine;
-  display: inline-block;
 }
 
 nav {
@@ -39,6 +64,112 @@ nav span {
   display: inline-block;
   padding: 20px 10px;
 }
-header a {
+
+a {
   color: inherit;
   }
+
+.content {
+  padding-top: 116px;
+  margin: 0 auto 78px auto;
+  font-size: 17px;
+  color: black;
+}
+
+.content, #mytimefooter {
+  font-family: Georgia;
+}
+
+.column {
+  margin-right: 32px;
+}
+
+.stories {
+  margin-top: 17px;
+  justify-content: space-between;
+}
+
+.stories .textstory {
+  height: 250px;
+}
+
+.column, .story, .smallbites, footer {
+  flex-direction: column;
+}
+
+.smallbites h3, .imagetext {
+  text-align:center;
+}
+
+.story span {
+    text-transform: uppercase;
+}
+
+.smallbites h3, #mytimefooter {
+  font-size: 16px;
+}
+
+.smallbites h3 {
+  margin-bottom: 41px;
+}
+
+.smallbites span {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium, .story {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.imagetext, #mytimefooter {
+  color: white;
+}
+
+#mytimefooter {
+  padding-right: 25px;
+  border-right: 2px solid white;
+}
+
+.footerinfo nav {
+  padding-left: 25px;
+}
+
+.fspan {
+    padding: 20px 10px;
+}
+
+.imagetext {
+  font-size: 30px;
+  height: 300px;
+  margin-top: 15px;
+}
+.imagetext.main {
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+}
+
+.imagetext.earth {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+}
+
+.imagetext.burger {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+}
+
+.imagetext.cat {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+}
